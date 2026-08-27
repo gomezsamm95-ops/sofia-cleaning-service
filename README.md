@@ -1,43 +1,30 @@
-# Sofia Cleaning Service - Tu Sitio Web Profesional
+# Sofia Cleaning Service
 
-## 🎉 ¡Bienvenido!
+Sitio web profesional para Sofia Cleaning Service - Servicio de limpieza de calidad.
 
-Este es el sitio web oficial de **Sofia Cleaning Service**, un servicio profesional de limpieza en Dallas y el Metroplex.
+## 🌐 Características
 
-### 📱 Accede a tu sitio en:
+- Diseño responsivo y moderno
+- Información sobre servicios
+- Formulario de contacto
+- Optimizado para móviles
+
+## 📁 Estructura
+
 ```
-https://gomezsamm95-ops.github.io/sofia-cleaning-service/
+├── index.html      # Página principal
+├── styles.css      # Estilos
+└── README.md       # Este archivo
 ```
 
-### ✨ Características
+## 🚀 Cómo ver el sitio
 
-- 🏠 **Inicio** - Presentación profesional
-- 🔧 **Servicios** - 6 servicios principales
-- 💰 **Precios** - 3 paquetes profesionales:
-  - Limpieza Básica: $170
-  - Limpieza Media: $230 ⭐
-  - Limpieza Profunda: $320
-- 📞 **Contacto** - Formulario y información
-- 📱 **Responsive** - Funciona en móviles, tablets y desktops
+1. Ve a **Settings** (Configuración) del repositorio
+2. Desplázate a **GitHub Pages**
+3. Selecciona **main** como rama
+4. Tu sitio estará en: `https://gomezsamm95-ops.github.io/sofia-cleaning-service/`
 
-### 📞 Información de Contacto
+## 📧 Contacto
 
-- **Teléfono/WhatsApp:** +1 (945) 393-1058
-- **Email:** gomezsmm95@gmail.com
-- **Ubicación:** Dallas y alrededores (Metroplex)
-- **Horario:** Lunes - Viernes: 6:00 AM - 6:00 PM
-
-### 🛠️ Tecnologías Utilizadas
-
-- HTML5
-- CSS3 (Responsive Design)
-- JavaScript (Vanilla)
-- GitHub Pages (Hosting)
-
-### 📝 Licencia
-
-Este proyecto es propiedad de Sofia Cleaning Service © 2024
-
----
-
-**¡Gracias por elegir Sofia Cleaning Service! 🧹✨**
+Email: sofia@cleaningservice.com
+Teléfono: +1 (555) 123-4567
