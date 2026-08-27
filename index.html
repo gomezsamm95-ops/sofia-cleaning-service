@@ -10,11 +10,11 @@
     <!-- Navegación -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Sofia Cleaning Service</div>
+            <div class="logo">🏠 Sofia Cleaning Service</div>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#precios">Precios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="hamburger">
@@ -29,8 +29,32 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>Sofia Cleaning Service</h1>
-            <p>Tu solución confiable para un espacio limpio y profesional en Dallas y el Metroplex</p>
-            <button class="btn btn-primary" onclick="document.getElementById('contacto').scrollIntoView()">Solicita un Presupuesto</button>
+            <p>🏡 Hogares limpios, vidas más felices</p>
+            <p style="font-size: 1.1rem; margin-top: 15px;">✨ Servicio profesional en Dallas y el Metroplex</p>
+            <button class="btn btn-primary" onclick="document.getElementById('contacto').scrollIntoView()">Solicita tu Presupuesto</button>
+        </div>
+    </section>
+
+    <!-- Sección de Valores -->
+    <section class="valores">
+        <div class="container">
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <div class="icon">⭐</div>
+                    <h4>Confiable y Puntual</h4>
+                    <p>Llegamos a tiempo, siempre</p>
+                </div>
+                <div class="valor-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Trabajo de Calidad</h4>
+                    <p>Excelencia en cada detalle</p>
+                </div>
+                <div class="valor-item">
+                    <div class="icon">🌿</div>
+                    <h4>Productos Efectivos</h4>
+                    <p>Seguros y ecológicos</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -55,7 +79,7 @@
                     <p>Desinfección y limpieza exhaustiva de todas las áreas y rincones.</p>
                 </div>
                 <div class="servicio-card">
-                    <div class="icon">🧹</div>
+                    <div class="icon">🪟</div>
                     <h3>Limpieza de Ventanas</h3>
                     <p>Cristales impecables dentro y fuera de tu propiedad.</p>
                 </div>
@@ -65,7 +89,7 @@
                     <p>Servicios de limpieza periódica según tus necesidades.</p>
                 </div>
                 <div class="servicio-card">
-                    <div class="icon">🚀</div>
+                    <div class="icon">⚙️</div>
                     <h3>Servicios Personalizados</h3>
                     <p>Adaptamos nuestros servicios a tus requerimientos específicos.</p>
                 </div>
@@ -73,26 +97,56 @@
         </div>
     </section>
 
-    <!-- Sección de Galería -->
-    <section id="galeria" class="galeria">
+    <!-- Sección de Precios/Paquetes -->
+    <section id="precios" class="precios">
         <div class="container">
-            <h2>Galería de Trabajos</h2>
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <img src="https://via.placeholder.com/300x200?text=Limpieza+Residencial+1" alt="Limpieza Residencial">
-                    <p>Limpieza Residencial</p>
+            <h2>Nuestros Paquetes de Limpieza</h2>
+            <div class="precios-grid">
+                <!-- Paquete Básico -->
+                <div class="precio-card basica">
+                    <h3>🏡 Limpieza Básica</h3>
+                    <p class="descripcion">Ideal para mantenimiento regular del hogar</p>
+                    <div class="price">$170</div>
+                    <ul class="servicios-lista">
+                        <li>Limpieza de superficies y muebles</li>
+                        <li>Aspirado y trapeado de pisos</li>
+                        <li>Limpieza de baños</li>
+                        <li>Limpieza de cocina (exterior)</li>
+                        <li>Vaciar botes de basura</li>
+                    </ul>
+                    <a href="https://wa.me/19453931058?text=Hola%20Sofia%20Cleaning%20Service,%20me%20interesa%20el%20paquete%20de%20Limpieza%20B%C3%A1sica" class="btn btn-whatsapp" target="_blank">📱 Contactar por WhatsApp</a>
                 </div>
-                <div class="galeria-item">
-                    <img src="https://via.placeholder.com/300x200?text=Limpieza+Comercial+1" alt="Limpieza Comercial">
-                    <p>Limpieza Comercial</p>
+
+                <!-- Paquete Medio -->
+                <div class="precio-card media">
+                    <div class="destacado">MÁS POPULAR</div>
+                    <h3>🏠 Limpieza Media</h3>
+                    <p class="descripcion">Limpieza más detallada para tu hogar</p>
+                    <div class="price">$230</div>
+                    <ul class="servicios-lista">
+                        <li>Todo lo de la limpieza básica</li>
+                        <li>Limpieza de electrodomésticos (exterior)</li>
+                        <li>Limpieza de ventanas (interior)</li>
+                        <li>Limpieza detallada de baños y cocina</li>
+                        <li>Remoción de polvo en áreas de difícil acceso</li>
+                    </ul>
+                    <a href="https://wa.me/19453931058?text=Hola%20Sofia%20Cleaning%20Service,%20me%20interesa%20el%20paquete%20de%20Limpieza%20Media" class="btn btn-whatsapp" target="_blank">📱 Contactar por WhatsApp</a>
                 </div>
-                <div class="galeria-item">
-                    <img src="https://via.placeholder.com/300x200?text=Limpieza+Profunda+1" alt="Limpieza Profunda">
-                    <p>Limpieza Profunda</p>
-                </div>
-                <div class="galeria-item">
-                    <img src="https://via.placeholder.com/300x200?text=Limpieza+Ventanas" alt="Limpieza de Ventanas">
-                    <p>Limpieza de Ventanas</p>
+
+                <!-- Paquete Profundo -->
+                <div class="precio-card profunda">
+                    <h3>✨ Limpieza Profunda</h3>
+                    <p class="descripcion">Limpieza completa y profunda para cada rincón</p>
+                    <div class="price">$320</div>
+                    <ul class="servicios-lista">
+                        <li>Todo lo de la limpieza media</li>
+                        <li>Limpieza profunda de cocina (interior y exterior)</li>
+                        <li>Limpieza profunda de baños (sarro y detalles)</li>
+                        <li>Lavado de ventanas (interior y exterior)</li>
+                        <li>Limpieza de zócalos, puertas y marcos</li>
+                        <li>Remoción de manchas y acumulación de suciedad</li>
+                    </ul>
+                    <a href="https://wa.me/19453931058?text=Hola%20Sofia%20Cleaning%20Service,%20me%20interesa%20el%20paquete%20de%20Limpieza%20Profunda" class="btn btn-whatsapp" target="_blank">📱 Contactar por WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -101,14 +155,21 @@
     <!-- Sección de Contacto -->
     <section id="contacto" class="contacto">
         <div class="container">
-            <h2>Contáctanos</h2>
+            <h2>¡Contáctanos Hoy!</h2>
             <div class="contacto-content">
                 <div class="contacto-info">
-                    <h3>Información de Contacto</h3>
-                    <p><strong>Teléfono/WhatsApp:</strong> <a href="https://wa.me/19453931058" target="_blank">+1 (945) 393-1058</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:gomezsmm95@gmail.com">gomezsmm95@gmail.com</a></p>
-                    <p><strong>Ubicación:</strong> Dallas y alrededores (Metroplex)</p>
-                    <p><strong>Horario:</strong> Lunes - Viernes: 6:00 AM - 6:00 PM</p>
+                    <h3>📞 Información de Contacto</h3>
+                    <p><strong>Teléfono/WhatsApp:</strong></p>
+                    <p><a href="https://wa.me/19453931058" target="_blank" class="btn btn-whatsapp">📱 +1 (945) 393-1058</a></p>
+                    
+                    <p style="margin-top: 20px;"><strong>📧 Email:</strong></p>
+                    <p><a href="mailto:gomezsmm95@gmail.com">gomezsmm95@gmail.com</a></p>
+                    
+                    <p style="margin-top: 20px;"><strong>📍 Ubicación:</strong></p>
+                    <p>Dallas y alrededores (Metroplex)</p>
+                    
+                    <p style="margin-top: 20px;"><strong>🕐 Horario:</strong></p>
+                    <p>Lunes - Viernes: 6:00 AM - 6:00 PM</p>
                 </div>
                 <form class="contacto-form" id="formulario">
                     <input type="text" placeholder="Tu Nombre" required>
@@ -126,8 +187,8 @@
         <div class="container">
             <p>&copy; 2024 Sofia Cleaning Service. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="https://wa.me/19453931058" target="_blank">WhatsApp</a>
-                <a href="mailto:gomezsmm95@gmail.com">Email</a>
+                <a href="https://wa.me/19453931058" target="_blank">📱 WhatsApp</a>
+                <a href="mailto:gomezsmm95@gmail.com">📧 Email</a>
             </div>
         </div>
     </footer>
