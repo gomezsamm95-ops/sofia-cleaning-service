@@ -1,1 +1,582 @@
-:root {\n    --primary-color: #0B2E6C;\n    --secondary-color: #2E7D32;\n    --accent-color: #6A1B9A;\n    --text-color: #333;\n    --light-bg: #f5f5f5;\n    --white: #ffffff;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    line-height: 1.6;\n    color: var(--text-color);\n}\n\n.container {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 20px;\n}\n\n/* Navegación */\n.navbar {\n    background-color: var(--primary-color);\n    color: var(--white);\n    padding: 1rem 0;\n    position: sticky;\n    top: 0;\n    z-index: 100;\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n}\n\n.navbar .container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.logo {\n    font-size: 1.5rem;\n    font-weight: bold;\n    color: var(--white);\n}\n\n.nav-menu {\n    display: flex;\n    list-style: none;\n    gap: 2rem;\n}\n\n.nav-menu a {\n    color: var(--white);\n    text-decoration: none;\n    transition: color 0.3s ease;\n    font-weight: 500;\n}\n\n.nav-menu a:hover {\n    color: var(--secondary-color);\n}\n\n.hamburger {\n    display: none;\n    flex-direction: column;\n    cursor: pointer;\n}\n\n.hamburger span {\n    width: 25px;\n    height: 3px;\n    background-color: var(--white);\n    margin: 5px 0;\n    transition: 0.3s;\n}\n\n/* Sección Hero */\n.hero {\n    background: linear-gradient(135deg, var(--primary-color) 0%, #1565C0 100%);\n    color: var(--white);\n    padding: 100px 20px;\n    text-align: center;\n    min-height: 500px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.hero-content h1 {\n    font-size: 3.5rem;\n    margin-bottom: 20px;\n    animation: slideInDown 0.8s ease;\n}\n\n.hero-content p {\n    font-size: 1.3rem;\n    margin-bottom: 30px;\n    animation: slideInUp 0.8s ease;\n}\n\n/* Botones */\n.btn {\n    padding: 12px 30px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n    font-size: 1rem;\n    transition: all 0.3s ease;\n    text-decoration: none;\n    display: inline-block;\n    font-weight: bold;\n}\n\n.btn-primary {\n    background-color: var(--accent-color);\n    color: var(--white);\n}\n\n.btn-primary:hover {\n    background-color: #4A148C;\n    transform: translateY(-2px);\n    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.4);\n}\n\n.btn-whatsapp {\n    background-color: #25D366;\n    color: var(--white);\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.btn-whatsapp:hover {\n    background-color: #1EBE57;\n}\n\n/* Servicios */\n.servicios {\n    padding: 80px 20px;\n    background-color: var(--light-bg);\n}\n\n.servicios h2 {\n    text-align: center;\n    font-size: 2.5rem;\n    margin-bottom: 50px;\n    color: var(--primary-color);\n}\n\n.servicios-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 30px;\n}\n\n.servicio-card {\n    background-color: var(--white);\n    padding: 30px;\n    border-radius: 10px;\n    text-align: center;\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n    transition: transform 0.3s ease, box-shadow 0.3s ease;\n    border-top: 4px solid var(--secondary-color);\n}\n\n.servicio-card:nth-child(2) {\n    border-top-color: var(--primary-color);\n}\n\n.servicio-card:nth-child(3) {\n    border-top-color: var(--accent-color);\n}\n\n.servicio-card:hover {\n    transform: translateY(-10px);\n    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);\n}\n\n.servicio-card .icon {\n    font-size: 3rem;\n    margin-bottom: 15px;\n}\n\n.servicio-card h3 {\n    color: var(--primary-color);\n    margin-bottom: 10px;\n    font-size: 1.3rem;\n}\n\n.servicio-card .price {\n    font-size: 2rem;\n    font-weight: bold;\n    margin: 15px 0;\n    color: var(--secondary-color);\n}\n\n.servicio-card .price.media {\n    color: var(--primary-color);\n}\n\n.servicio-card .price.profunda {\n    color: var(--accent-color);\n}\n\n.servicio-card ul {\n    text-align: left;\n    list-style: none;\n    margin: 15px 0;\n    color: #666;\n}\n\n.servicio-card li {\n    padding: 8px 0;\n    border-bottom: 1px solid #eee;\n}\n\n.servicio-card li:before {\n    content: \"✓ \";\n    color: var(--secondary-color);\n    font-weight: bold;\n    margin-right: 5px;\n}\n\n.servicio-card p {\n    color: #666;\n    margin-bottom: 15px;\n}\n\n/* Galería */\n.galeria {\n    padding: 80px 20px;\n}\n\n.galeria h2 {\n    text-align: center;\n    font-size: 2.5rem;\n    margin-bottom: 50px;\n    color: var(--primary-color);\n}\n\n.galeria-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n    gap: 20px;\n}\n\n.galeria-item {\n    position: relative;\n    overflow: hidden;\n    border-radius: 10px;\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\n    transition: transform 0.3s ease;\n}\n\n.galeria-item:hover {\n    transform: scale(1.05);\n}\n\n.galeria-item img {\n    width: 100%;\n    height: 250px;\n    object-fit: cover;\n    display: block;\n}\n\n.galeria-item p {\n    padding: 15px;\n    background-color: var(--primary-color);\n    color: var(--white);\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Contacto */\n.contacto {\n    padding: 80px 20px;\n    background-color: var(--light-bg);\n}\n\n.contacto h2 {\n    text-align: center;\n    font-size: 2.5rem;\n    margin-bottom: 50px;\n    color: var(--primary-color);\n}\n\n.contacto-content {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 40px;\n    max-width: 900px;\n    margin: 0 auto;\n}\n\n.contacto-info h3 {\n    color: var(--primary-color);\n    margin-bottom: 20px;\n}\n\n.contacto-info p {\n    margin-bottom: 15px;\n    line-height: 1.8;\n}\n\n.contacto-info a {\n    color: var(--accent-color);\n    text-decoration: none;\n    font-weight: bold;\n    transition: color 0.3s ease;\n}\n\n.contacto-info a:hover {\n    color: var(--primary-color);\n}\n\n.contacto-form {\n    display: flex;\n    flex-direction: column;\n    gap: 15px;\n}\n\n.contacto-form input,\n.contacto-form textarea {\n    padding: 12px;\n    border: 2px solid #ddd;\n    border-radius: 5px;\n    font-family: inherit;\n    font-size: 1rem;\n    transition: border-color 0.3s ease;\n}\n\n.contacto-form input:focus,\n.contacto-form textarea:focus {\n    outline: none;\n    border-color: var(--primary-color);\n}\n\n/* Footer */\n.footer {\n    background-color: var(--primary-color);\n    color: var(--white);\n    padding: 30px 20px;\n    text-align: center;\n}\n\n.footer .container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    flex-wrap: wrap;\n    gap: 20px;\n}\n\n.social-links {\n    display: flex;\n    gap: 20px;\n}\n\n.social-links a {\n    color: var(--white);\n    text-decoration: none;\n    transition: color 0.3s ease;\n    font-weight: bold;\n}\n\n.social-links a:hover {\n    color: var(--secondary-color);\n}\n\n/* Animaciones */\n@keyframes slideInDown {\n    from {\n        opacity: 0;\n        transform: translateY(-30px);\n    }\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n@keyframes slideInUp {\n    from {\n        opacity: 0;\n        transform: translateY(30px);\n    }\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n/* Responsive */\n@media (max-width: 768px) {\n    .nav-menu {\n        display: none;\n    }\n\n    .hamburger {\n        display: flex;\n    }\n\n    .hero-content h1 {\n        font-size: 2rem;\n    }\n\n    .hero-content p {\n        font-size: 1rem;\n    }\n\n    .servicios h2,\n    .galeria h2,\n    .contacto h2 {\n        font-size: 2rem;\n    }\n\n    .contacto-content {\n        grid-template-columns: 1fr;\n    }\n\n    .footer .container {\n        flex-direction: column;\n    }\n}\n\n@media (max-width: 480px) {\n    .logo {\n        font-size: 1.2rem;\n    }\n\n    .hero-content h1 {\n        font-size: 1.5rem;\n    }\n\n    .servicios h2,\n    .galeria h2,\n    .contacto h2 {\n        font-size: 1.5rem;\n    }\n}\n
+:root {
+    --primary-color: #0B2E6C;
+    --secondary-color: #2E7D32;
+    --accent-color: #6A1B9A;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1565C0 100%);
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: slideInDown 0.8s ease;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    animation: slideInUp 0.8s ease;
+}
+
+/* Botones */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #4A148C;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.4);
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: var(--white);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE57;
+    transform: translateY(-2px);
+}
+
+/* Valores */
+.valores {
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.valor-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.valor-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.valor-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.valor-item p {
+    color: #666;
+}
+
+/* Servicios */
+.servicios {
+    padding: 80px 20px;
+    background-color: var(--light-bg);
+}
+
+.servicios h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.servicio-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.servicio-card:nth-child(2) {
+    border-top-color: var(--primary-color);
+}
+
+.servicio-card:nth-child(3) {
+    border-top-color: var(--accent-color);
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.servicio-card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.servicio-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.servicio-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Precios/Paquetes */
+.precios {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.precios h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.precios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.precio-card {
+    background-color: var(--light-bg);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.precio-card.media {
+    border-left-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.precio-card.profunda {
+    border-left-color: var(--accent-color);
+}
+
+.precio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.precio-card.media:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.precio-card .destacado {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.precio-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.precio-card .descripcion {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.precio-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 20px 0;
+}
+
+.precio-card.media .price {
+    color: var(--primary-color);
+}
+
+.precio-card.profunda .price {
+    color: var(--accent-color);
+}
+
+.precio-card .servicios-lista {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.precio-card .servicios-lista li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.precio-card .servicios-lista li:before {
+    content: "✓ ";
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.precio-card .servicios-lista li:last-child {
+    border-bottom: none;
+}
+
+.precio-card .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 12px 20px;
+}
+
+/* Galería */
+.galeria {
+    padding: 80px 20px;
+    background-color: var(--light-bg);
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-item p {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contacto */
+.contacto {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.contacto-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contacto-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contacto-info p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.contacto-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+    color: var(--primary-color);
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Animaciones */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .servicios h2,
+    .galeria h2,
+    .contacto h2,
+    .precios h2 {
+        font-size: 2rem;
+    }
+
+    .contacto-content {
+        grid-template-columns: 1fr;
+    }
+
+    .precio-card.media {
+        transform: scale(1);
+    }
+
+    .precio-card.media:hover {
+        transform: translateY(-10px);
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .servicios h2,
+    .galeria h2,
+    .contacto h2,
+    .precios h2 {
+        font-size: 1.5rem;
+    }
+
+    .precio-card {
+        padding: 25px 20px;
+    }
+
+    .precio-card .price {
+        font-size: 2rem;
+    }
+}
